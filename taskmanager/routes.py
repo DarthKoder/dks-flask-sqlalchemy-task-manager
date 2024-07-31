@@ -5,4 +5,4 @@ from taskmanager.models import Category, Task
 
 @app.route("/")
 def home():
-    return render_template("base.html")
+    return render_template("tasks.html") # now tasks.html is the homepage
