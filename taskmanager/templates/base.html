@@ -8,32 +8,32 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css">
         <title>Task Manager</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css">
     </head>
     <body>
         
         <header>
 
-            <!-- Top navbar-->
+            <!-- Top navbar -->
             <nav class = "red darken-4"> <!-- materialize colour class -->
                 <div class="nav-wrapper">
                   <a href="{{ url_for('home') }}" class="brand-logo">Task Manager</a>
                   <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                   <ul class="right hide-on-med-and-down">
                     <li><a href="{{ url_for('home') }}">Home</a></li>
-                    <li><a">New Task</a></li>
-                    <li><a>Categories</a></li>
+                    <li><a>New Task</a></li>
+                    <li><a href="{{ url_for('categories') }}">Categories</a></li>
 
                   </ul>
                 </div>
               </nav>
             
-              <!-- Side navbar-->
+              <!-- Side navbar -->
               <ul class="sidenav" id="mobile-demo">
                 <li><a href="{{ url_for('home') }}">Home</a></li>
                 <li><a>New Task</a></li>
-                <li><a>Categories</a></li>
+                <li><a href="{{ url_for('categories') }}">Categories</a></li>
 
               </ul>
 
@@ -61,3 +61,4 @@
 
     </body>
 </html>
+
