@@ -21,7 +21,7 @@
           I am convenient because I require little markup to use effectively.</p>
         </div>
         <div class="card-action">
-          <a href="#" class="btn orange accent-3">Edit</a>
+          <a href="{{ url_for('edit_category', category_id=category.id) }}" class="btn orange accent-3">Edit</a>
           <a href="#" class="btn black">Delete</a>
         </div>
       </div>
