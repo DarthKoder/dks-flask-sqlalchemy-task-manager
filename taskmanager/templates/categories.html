@@ -11,4 +11,22 @@
     </div>
 </div>
 
+<div class="row">
+    {% for category in categories %}
+    <div class="col s12 m6 l3">
+      <div class="card red darken-4 center-align">
+        <div class="card-content white-text">
+          <span class="card-title">{{ category.category_name }}</span>
+          <p>I am a very simple card. I am good at containing small bits of information.
+          I am convenient because I require little markup to use effectively.</p>
+        </div>
+        <div class="card-action">
+          <a href="#" class="btn orange accent-3">Edit</a>
+          <a href="#" class="btn black">Delete</a>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+
 {% endblock %}
