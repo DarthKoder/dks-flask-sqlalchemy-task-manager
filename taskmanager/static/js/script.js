@@ -44,3 +44,18 @@ document.addEventListener('DOMContentLoaded', function() {
   $(document).ready(function(){
     $('select').formSelect();
   });
+
+
+
+  // Script for collapsibles
+
+  document.addEventListener('DOMContentLoaded', function() {
+    let collapsibles = document.querySelectorAll('.collapsible');
+    M.Collapsible.init(collapsibles);
+  });
+
+  // Or with jQuery
+
+  $(document).ready(function(){
+    $('.collapsible').collapsible();
+  });
